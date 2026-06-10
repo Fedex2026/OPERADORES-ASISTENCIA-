@@ -9,7 +9,7 @@
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
 
-<title>Historial Operador</title>
+<title>Dashboard Operador</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -19,86 +19,94 @@ content="width=device-width, initial-scale=1.0">
 
 <div class="dashboard">
 
-```
 <div class="header">
 
-    <h1>ROAD ASSIST</h1>
+```
+<h1>
+    ROAD ASSIST
+</h1>
 
-    <h2>HISTORIAL DE SERVICIOS</h2>
-
-</div>
-
-<div class="card">
-
-    <h3>Servicio #1</h3>
-
-    <p>
-        Folio:
-        RAS-2024-1057
-    </p>
-
-    <p>
-        Cliente:
-        María López
-    </p>
-
-    <p>
-        Servicio:
-        Cambio de llanta
-    </p>
-
-    <p>
-        Estado:
-        ✅ Finalizado
-    </p>
-
-    <p>
-        Tiempo:
-        28 min
-    </p>
+<h2>
+    OPERADOR AX-07
+</h2>
+```
 
 </div>
 
 <div class="card">
 
-    <h3>Servicio #2</h3>
+```
+<h3>
+    Luis Ramírez
+</h3>
 
-    <p>
-        Folio:
-        RAS-2024-1058
-    </p>
+<p>
+    Unidad AX-07
+</p>
 
-    <p>
-        Cliente:
-        Carlos Ramírez
-    </p>
+<div id="operatorStatus"
+     class="status available">
 
-    <p>
-        Servicio:
-        Paso de corriente
-    </p>
-
-    <p>
-        Estado:
-        ✅ Finalizado
-    </p>
-
-    <p>
-        Tiempo:
-        18 min
-    </p>
+    🟢 Disponible
 
 </div>
 
-<button
-  onclick="window.location.href='dashboard.html'">
+<button id="toggleStatus">
 
-  ⬅ Regresar
+    Darme de Baja
 
 </button>
 ```
 
 </div>
 
+<div class="card">
+
+```
+<h3>
+    Indicadores
+</h3>
+
+<p>
+    Servicios Hoy:
+    <b>4</b>
+</p>
+
+<p>
+    Ganancia Hoy:
+    <b>$1,850</b>
+</p>
+```
+
+</div>
+
+<div class="card">
+
+```
+<h3>
+    Servicio Actual
+</h3>
+
+<p id="serviceMessage">
+
+    Esperando servicio...
+
+</p>
+
+<button id="serviceBtn">
+
+    Ver Servicio
+
+</button>
+```
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
+
