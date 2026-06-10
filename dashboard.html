@@ -88,8 +88,7 @@ content="width=device-width, initial-scale=1.0">
 
     </p>
 
-    <button
-        id="serviceBtn">
+    <button id="serviceBtn">
 
         Ver Servicio
 
@@ -100,59 +99,8 @@ content="width=device-width, initial-scale=1.0">
 
 </div>
 
-<script>
-
-let active = true;
-
-const status =
-document.getElementById(
-"operatorStatus"
-);
-
-document
-.getElementById(
-"toggleStatus"
-)
-.addEventListener(
-"click",
-()=>{
-
-active = !active;
-
-if(active){
-
-status.innerHTML =
-"🟢 Disponible";
-
-status.className =
-"status available";
-
-}else{
-
-status.innerHTML =
-"🔴 No Disponible";
-
-status.className =
-"status offline";
-
-}
-
-});
-
-document
-.getElementById(
-"serviceBtn"
-)
-.addEventListener(
-"click",
-()=>{
-
-window.location.href =
-"servicio.html";
-
-});
-
-</script>
+<script src="script.js"></script>
 
 </body>
+
 </html>
