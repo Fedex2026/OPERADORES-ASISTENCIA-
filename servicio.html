@@ -86,78 +86,8 @@ content="width=device-width, initial-scale=1.0">
 
 </div>
 
-<script>
-
-const estado =
-document.getElementById("estado");
-
-document
-.getElementById("acceptBtn")
-.addEventListener("click",()=>{
-
-estado.innerHTML =
-"ACEPTADO";
-
-alert(
-"Servicio aceptado"
-);
-
-});
-
-document
-.getElementById("rejectBtn")
-.addEventListener("click",()=>{
-
-estado.innerHTML =
-"RECHAZADO";
-
-alert(
-"Servicio rechazado"
-);
-
-});
-
-document
-.getElementById("routeBtn")
-.addEventListener("click",()=>{
-
-estado.innerHTML =
-"EN CAMINO";
-
-});
-
-document
-.getElementById("arriveBtn")
-.addEventListener("click",()=>{
-
-estado.innerHTML =
-"ARRIBO";
-
-});
-
-document
-.getElementById("finishBtn")
-.addEventListener("click",()=>{
-
-estado.innerHTML =
-"FINALIZADO";
-
-alert(
-"Servicio finalizado"
-);
-
-});
-
-document
-.getElementById("backBtn")
-.addEventListener("click",()=>{
-
-window.location.href =
-"dashboard.html";
-
-});
-
-</script>
+<script src="script.js"></script>
 
 </body>
+
 </html>
