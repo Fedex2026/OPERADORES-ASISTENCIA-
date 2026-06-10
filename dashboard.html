@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard Operador</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+```
+<div class="header">
+
+    <h1>
+        ROAD ASSIST
+    </h1>
+
+    <h2>
+        OPERADOR AX-07
+    </h2>
+
+</div>
+
+<div class="card">
+
+    <h3>
+        Luis Ramírez
+    </h3>
+
+    <p>
+        Unidad AX-07
+    </p>
+
+    <div id="operatorStatus"
+         class="status available">
+
+        🟢 Disponible
+
+    </div>
+
+    <button id="toggleStatus">
+
+        Darme de Baja
+
+    </button>
+
+</div>
+
+<div class="card">
+
+    <h3>
+        Indicadores
+    </h3>
+
+    <p>
+        Servicios Hoy:
+        <b>4</b>
+    </p>
+
+    <p>
+        Ganancia Hoy:
+        <b>$1,850</b>
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>
+        Servicio Actual
+    </h3>
+
+    <p id="serviceMessage">
+
+        Esperando servicio...
+
+    </p>
+
+    <button
+        id="serviceBtn">
+
+        Ver Servicio
+
+    </button>
+
+</div>
+```
+
+</div>
+
+<script>
+
+let active = true;
+
+const status =
+document.getElementById(
+"operatorStatus"
+);
+
+document
+.getElementById(
+"toggleStatus"
+)
+.addEventListener(
+"click",
+()=>{
+
+active = !active;
+
+if(active){
+
+status.innerHTML =
+"🟢 Disponible";
+
+status.className =
+"status available";
+
+}else{
+
+status.innerHTML =
+"🔴 No Disponible";
+
+status.className =
+"status offline";
+
+}
+
+});
+
+document
+.getElementById(
+"serviceBtn"
+)
+.addEventListener(
+"click",
+()=>{
+
+window.location.href =
+"servicio.html";
+
+});
+
+</script>
+
+</body>
+</html>
