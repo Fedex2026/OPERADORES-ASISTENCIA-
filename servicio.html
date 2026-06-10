@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Servicio Operador</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="service-container">
+
+```
+<div class="service-card">
+
+    <h1>
+        NUEVO SERVICIO
+    </h1>
+
+    <hr>
+
+    <p>
+        <strong>Folio:</strong>
+        RAS-2024-1057
+    </p>
+
+    <p>
+        <strong>Cliente:</strong>
+        María López
+    </p>
+
+    <p>
+        <strong>Servicio:</strong>
+        Cambio de llanta
+    </p>
+
+    <p>
+        <strong>Distancia:</strong>
+        1.8 km
+    </p>
+
+    <p>
+        <strong>Estado:</strong>
+        <span id="estado">
+            ASIGNADO
+        </span>
+    </p>
+
+    <hr>
+
+    <button id="acceptBtn">
+        ✅ ACEPTAR
+    </button>
+
+    <button id="rejectBtn">
+        ❌ RECHAZAR
+    </button>
+
+    <button id="routeBtn">
+        🚗 EN CAMINO
+    </button>
+
+    <button id="arriveBtn">
+        📍 ARRIBO
+    </button>
+
+    <button id="finishBtn">
+        🏁 FINALIZAR
+    </button>
+
+    <button id="backBtn">
+        ⬅ REGRESAR
+    </button>
+
+</div>
+```
+
+</div>
+
+<script>
+
+const estado =
+document.getElementById("estado");
+
+document
+.getElementById("acceptBtn")
+.addEventListener("click",()=>{
+
+estado.innerHTML =
+"ACEPTADO";
+
+alert(
+"Servicio aceptado"
+);
+
+});
+
+document
+.getElementById("rejectBtn")
+.addEventListener("click",()=>{
+
+estado.innerHTML =
+"RECHAZADO";
+
+alert(
+"Servicio rechazado"
+);
+
+});
+
+document
+.getElementById("routeBtn")
+.addEventListener("click",()=>{
+
+estado.innerHTML =
+"EN CAMINO";
+
+});
+
+document
+.getElementById("arriveBtn")
+.addEventListener("click",()=>{
+
+estado.innerHTML =
+"ARRIBO";
+
+});
+
+document
+.getElementById("finishBtn")
+.addEventListener("click",()=>{
+
+estado.innerHTML =
+"FINALIZADO";
+
+alert(
+"Servicio finalizado"
+);
+
+});
+
+document
+.getElementById("backBtn")
+.addEventListener("click",()=>{
+
+window.location.href =
+"dashboard.html";
+
+});
+
+</script>
+
+</body>
+</html>
